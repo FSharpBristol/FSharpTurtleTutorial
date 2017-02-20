@@ -1,3 +1,5 @@
+module TurtleRunner
+
 open System
 
 // Basic discriminted unions - think enums
@@ -47,8 +49,8 @@ let commands = [
     Move 40.0
 ]
 
-// Our initial Turtle instance
-let turtle = {xpos=0.0; ypos=0.0; angle=90.0; penState=Down; colour=Black}
+// // Our initial Turtle instance
+// let turtle = {xpos=0.0; ypos=0.0; angle=90.0; penState=Down; colour=Black}
 
-// Apply all the commands to the Turtle in turn
-let movedTurtle = commands |> List.fold processCommand turtle
+// // Apply all the commands to the Turtle in turn
+// let movedTurtle = commands |> List.fold processCommand turtle
