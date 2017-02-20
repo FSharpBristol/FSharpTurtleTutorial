@@ -6,7 +6,9 @@ open TurtleRunner
 open Microsoft.FSharp.Reflection
 
 let private getUnionTypeFromString<'a> (s:string) =
-    match FSharpType.GetUnionCases typeof<'a> |> Array.filter (fun case -> case.Name = s) with
+    let matchedType = FSharpType.GetUnionCases typeof<'a> 
+                      |> Array.filter (fun case -> case.Name = s)
+    match matchedType with
     |[|case|] -> Some(FSharpValue.MakeUnion(case,[||]) :?> 'a)
     |_ -> None
 
