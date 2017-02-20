@@ -40,7 +40,7 @@ let private testProcessCommand command =
 
     match (penState, colour, command) with
     | (Some penVal, Some colourVal, Some commandVal) 
-        -> let record = getRecordType<Turtle>([0.0; 0.0; 90.0; Up; Red])
+        -> let record = getRecordType<Turtle>([0.0; 0.0; 90.0; penVal; colour])
            match record with 
            | Some r -> let result = invokeFunction("processCommand", [r; commandVal])
                        Assert.True(result.IsSome)
@@ -109,7 +109,7 @@ let ``Expected Turtle record type is defined``() =
 
     match (penState, colour) with
     | (Some penVal, Some colourVal) 
-        -> let record = getRecordType<Turtle>([0.0; 0.0; 90.0; Up; Red])
+        -> let record = getRecordType<Turtle>([0.0; 0.0; 90.0; penVal; colourVal])
            Assert.True(record.IsSome)
     | (None, Some _) -> Assert.True(false, "Must define PenState Up first")
     | (Some _, None) -> Assert.True(false, "Must define Colour Red first")
