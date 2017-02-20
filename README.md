@@ -6,7 +6,7 @@ Based on "Logo", the original 1967 turtle program.  Here's an online version for
 
 ## Dependencies
 
-Needs the .Net Core 1.0.1 runtime installed locally.  If you don't already have this installed:
+Needs the .Net Core 1.0.* runtime installed locally.  If you don't already have this installed:
 
 * Run the ".NET Core 1.1 SDK - Installer" from here: https://www.microsoft.com/net/download/core#/current
 * Run the ".NET Core 1.0.3 runtime - Installer" from here: https://www.microsoft.com/net/download/core#/lts/runtime
