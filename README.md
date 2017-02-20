@@ -11,6 +11,16 @@ Needs the .Net Core 1.0.1 runtime installed locally.  If you don't already have 
 * Run the ".NET Core 1.1 SDK - Installer" from here: https://www.microsoft.com/net/download/core#/current
 * Run the ".NET Core 1.0.3 runtime - Installer" from here: https://www.microsoft.com/net/download/core#/lts/runtime
 
+## Starting the Workshop
+
+Firstly run `dotnet restore` and `dotnet build` in the "FSharp-Version" folder
+
+Then run `dotnet restore` in the "Unit-Tests" folder.
+
+The "Unit-Tests" project hold a series of failing tests.  The exercise is to simply make the tests pass by modifying the "Exercise" project.
+
+To execute the tests, run `dotnet test` inside the "Unit-Tests" folder
+
 ## Specifications
 
 ```gherkin
