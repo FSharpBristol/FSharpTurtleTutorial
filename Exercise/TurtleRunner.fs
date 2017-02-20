@@ -36,18 +36,20 @@ let processCommand turtle command =
     | SetPen state ->  {turtle with penState=state}
     | SetColour colour -> {turtle with colour=colour}
 
-// List of Commands to apply
-let commands = [
-    Move 20.0
-    Turn(Left, 90.0)
-    Move 20.0
-    Turn(Right, 90.0)
-    SetColour Red 
-    Move 20.0
-    Turn(Right, 90.0)
-    SetPen Up 
-    Move 40.0
-]
+// --- Uncomment this section to run a full test ---
+
+// // List of Commands to apply
+// let commands = [
+//     Move 20.0
+//     Turn(Left, 90.0)
+//     Move 20.0
+//     Turn(Right, 90.0)
+//     SetColour Red 
+//     Move 20.0
+//     Turn(Right, 90.0)
+//     SetPen Up 
+//     Move 40.0
+// ]
 
 // // Our initial Turtle instance
 // let turtle = {xpos=0.0; ypos=0.0; angle=90.0; penState=Down; colour=Black}
