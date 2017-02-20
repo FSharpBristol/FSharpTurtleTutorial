@@ -4,6 +4,13 @@
 
 Based on "Logo", the original 1967 turtle program.  Here's an online version for reference: https://turtleacademy.com/playground/en
 
+## Dependencies
+
+Needs the .Net Core 1.0.1 runtime installed locally.  If you don't already have this installed:
+
+* Run the ".NET Core 1.1 SDK - Installer" from here: https://www.microsoft.com/net/download/core#/current
+* Run the ".NET Core 1.0.3 runtime - Installer" from here: https://www.microsoft.com/net/download/core#/lts/runtime
+
 ## Specifications
 
 ```gherkin
@@ -37,13 +44,3 @@ And the set colour command is issued with a value of Red
 And the move command is issued with a value of 10
 Then the turtle draws a 10 pixel red line
 ```
-
-## Additional points to note 
-
-* Worth pointing out the F# Repl for quick debugging
-
-## What's missing from the current example solution?
-
-* Doesn't demonstrate the Option type
-* Doesn't show a lot of pipe forward operator use
-* Doesn't show off type providers
