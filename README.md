@@ -11,6 +11,8 @@ Needs the .Net Core 1.0.* runtime installed locally.  If you don't already have 
 * Run the ".NET Core 1.1 SDK - Installer" from here: https://www.microsoft.com/net/download/core#/current
 * Run the ".NET Core 1.0.3 runtime - Installer" from here: https://www.microsoft.com/net/download/core#/lts/runtime
 
+For the workshop we recommend using [Visual Studio Code](https://code.visualstudio.com/) with the [Ionide F# Plugin](https://marketplace.visualstudio.com/items?itemName=Ionide.Ionide-fsharp) for editing the script.
+
 ## Starting the Workshop
 
 Firstly run `dotnet restore` and `dotnet build` in the "FSharp-Version" folder
