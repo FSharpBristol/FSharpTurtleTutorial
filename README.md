@@ -6,19 +6,13 @@ Based on "Logo", the original 1967 turtle program.  Here's an online version for
 
 ## Setup
 
-Needs the .Net Core 1.0.4 onwards runtime installed locally.
+Needs the .Net Core 1.0.4 runtime installed locally.
 
 If you don't already have this installed run the .NET Core SDK Installer (contains .NET Core 1.0.4 and 1.1.1) from here: https://www.microsoft.com/net/download/core
 
 You'll also need Visual Studio Code, Ionide and the Visual F# Tools.  
 
 [Go here](http://fsharp.org/use/windows/) and follow "Options 2: Install Visual Studio Code" then "Option 3: Install the free F# compiler and tools alone"
-
-For the workshop we recommend using Visual Studio Code with Ionide for editing the script., to set this up (Windows specific):
-
-* Install [Visual Studio Code](https://code.visualstudio.com/)
-* Install [Visual F# Tools 4.0](https://www.microsoft.com/en-us/download/details.aspx?id=48179)
-* Install the [Ionide F# Plugin](https://marketplace.visualstudio.com/items?itemName=Ionide.Ionide-fsharp)
 
 ## Starting the Workshop
 
