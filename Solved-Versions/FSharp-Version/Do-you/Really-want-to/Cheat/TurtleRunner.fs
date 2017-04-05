@@ -26,13 +26,13 @@ type Command =
 // Function to apply state changes in a Command to a Turtle
 let processCommand turtle command = 
     match command with
-    | Move distance -> let angleInRads = turtle.angle * (Math.PI/180.0) * 1.0
+    | Move distance -> let angleInRads = turtle.angle * (Math.PI/180.0)
                        {turtle with 
-                            xpos = turtle.xpos + (distance * Math.Cos(angleInRads))
-                            ypos = turtle.ypos + (distance * Math.Sin(angleInRads))}
+                            xpos = turtle.xpos + (distance * Math.Sin(angleInRads))
+                            ypos = turtle.ypos + (distance * Math.Cos(angleInRads))}
     | Turn(direction, degrees) -> match direction with 
-                                  | Left ->  {turtle with angle = turtle.angle + degrees} 
-                                  | Right -> {turtle with angle = turtle.angle - degrees} 
+                                  | Left ->  {turtle with angle = turtle.angle - degrees} 
+                                  | Right -> {turtle with angle = turtle.angle + degrees} 
     | SetPen state ->  {turtle with penState=state}
     | SetColour colour -> {turtle with colour=colour}
 
@@ -49,8 +49,8 @@ let commands = [
     Move 40.0
 ]
 
-// // Our initial Turtle instance
-// let turtle = {xpos=0.0; ypos=0.0; angle=90.0; penState=Down; colour=Black}
+// Our initial Turtle instance
+let turtle = {xpos=0.0; ypos=0.0; angle=90.0; penState=Down; colour=Black}
 
-// // Apply all the commands to the Turtle in turn
-// let movedTurtle = commands |> List.fold processCommand turtle
+// Apply all the commands to the Turtle in turn
+let movedTurtle = commands |> List.fold processCommand turtle

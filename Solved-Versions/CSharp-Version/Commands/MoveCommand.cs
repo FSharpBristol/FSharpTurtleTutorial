@@ -15,10 +15,10 @@ namespace TurtleRunner.Commands
         public void ExecuteCommand(Turtle turtle)
         {
             // Maths I don't fully understand!  Moves the turtle along it's current heading.
-            var angleInRads = turtle.Angle * (Math.PI/180.0) * 1.0;
+            var angleInRads = turtle.Angle * (Math.PI/180.0);
 
-            turtle.XPosition  = (int)Math.Round(turtle.XPosition  + (_quantityToMove * Math.Cos(angleInRads)));
-            turtle.YPosition  = (int)Math.Round(turtle.YPosition  + (_quantityToMove * Math.Sin(angleInRads)));
+            turtle.XPosition  = (int)Math.Round(turtle.XPosition  + (_quantityToMove * Math.Sin(angleInRads)));
+            turtle.YPosition  = (int)Math.Round(turtle.YPosition  + (_quantityToMove * Math.Cos(angleInRads)));
         }
     }
 }
