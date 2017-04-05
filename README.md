@@ -4,12 +4,15 @@
 
 Based on "Logo", the original 1967 turtle program.  Here's an online version for reference: https://turtleacademy.com/playground/en
 
-## Dependencies
+## Setup
 
-Needs the .Net Core 1.0.* runtime installed locally.  If you don't already have this installed:
+Needs the .Net Core 1.0.4 onwards runtime installed locally.
 
-* Run the ".NET Core 1.1 SDK - Installer" from here: https://www.microsoft.com/net/download/core#/current
-* Run the ".NET Core 1.0.3 runtime - Installer" from here: https://www.microsoft.com/net/download/core#/lts/runtime
+If you don't already have this installed run the .NET Core SDK Installer (contains .NET Core 1.0.4 and 1.1.1) from here: https://www.microsoft.com/net/download/core
+
+You'll also need Visual Studio Code, Ionide and the Visual F# Tools.  
+
+[Go here](http://fsharp.org/use/windows/) and follow "Options 2: Install Visual Studio Code" then "Option 3: Install the free F# compiler and tools alone"
 
 For the workshop we recommend using Visual Studio Code with Ionide for editing the script., to set this up (Windows specific):
 
@@ -19,13 +22,13 @@ For the workshop we recommend using Visual Studio Code with Ionide for editing t
 
 ## Starting the Workshop
 
-Firstly run `dotnet restore` and `dotnet build` in the "FSharp-Version" folder
+Firstly run `dotnet restore` and `dotnet build` in the "Exercise" folder
 
 Then run `dotnet restore` in the "Unit-Tests" folder.
 
-The "Unit-Tests" project hold a series of failing tests.  The exercise is to simply make the tests pass by modifying the "Exercise" project.
+Now open the project at the root folder in Visual Studio Code.  If you installed Ionide from the Setup section you will have syntax highlighting of the ".fs" files, you will also be able to execute lines of the file using F# Interactive directly from VS Code (Select the lines and press Alt+Enter)
 
-To execute the tests, run `dotnet test` inside the "Unit-Tests" folder
+[The exercise tutorial can be found here](https://github.com/FSharpBristol/FSharpBristolPresentations/blob/master/slides/FSharpTurtleTutorial.md)
 
 ## Specifications
 
