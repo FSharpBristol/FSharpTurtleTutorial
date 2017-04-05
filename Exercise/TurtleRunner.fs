@@ -22,22 +22,25 @@ let processCommand turtle command =
     | _ -> failwith "Command pattern matching not applied"
 
 // --- Uncomment this section to run a full test ---
+(*
 
-// // List of Commands to apply
-// let commands = [
-//     Move 20.0
-//     Turn(Left, 90.0)
-//     Move 20.0
-//     Turn(Right, 90.0)
-//     SetColour Red 
-//     Move 20.0
-//     Turn(Right, 90.0)
-//     SetPen Up 
-//     Move 40.0
-// ]
+// List of Commands to apply
+let commands = [
+    Move 20.0
+    Turn(Left, 90.0)
+    Move 20.0
+    Turn(Right, 90.0)
+    SetColour Red 
+    Move 20.0
+    Turn(Right, 90.0)
+    SetPen Up 
+    Move 40.0
+]
 
-// // Our initial Turtle instance
-// let turtle = {xpos=0.0; ypos=0.0; angle=90.0; penState=Down; colour=Black}
+// Our initial Turtle instance
+let turtle = {xpos=0.0; ypos=0.0; angle=90.0; penState=Down; colour=Black}
 
-// // Apply all the commands to the Turtle in turn
-// let movedTurtle = commands |> List.fold processCommand turtle
+// Apply all the commands to the Turtle in turn
+let movedTurtle = commands |> List.fold processCommand turtle
+
+*)
