@@ -23,37 +23,3 @@ Then run `dotnet restore` in the "Unit-Tests" folder.
 Now open the project at the root folder in Visual Studio Code.  If you installed Ionide from the Setup section you will have syntax highlighting of the ".fs" files, you will also be able to execute lines of the file using F# Interactive directly from VS Code (Select the lines and press Alt+Enter)
 
 [The exercise tutorial can be found here](https://fsharpbristol.github.io/FSharpBristol/presentations/FSharpTurtleTutorial#/1), press the down arrow to work through the slides.
-
-## Specifications
-
-```gherkin
-Given a turtle 
-When provided a list of commands 
-Then the turtle executes the commands in order
-
-Given a turtle
-When the pen down command is issued
-And the move command is issued with a value of 10
-Then the turtle moves 10 pixels
-And the turtle draws a 10 pixel black line
-
-Given a turtle 
-When the pen up command is issued
-And the move command is issued with a value of 10
-Then the turtle moves 10 pixels
-And the turtle does not draw a line 
-
-Given a turtle 
-When the turn left command is issued with a value of 90
-Then the turtle rotates counter-clockwise 90 degress
-
-Given a turtle 
-When the turn right command is issued with a value of 90
-Then the turtle rotates clockwise 90 degress
-
-Given a turtle
-When the pen down command is issued
-And the set colour command is issued with a value of Red
-And the move command is issued with a value of 10
-Then the turtle draws a 10 pixel red line
-```
