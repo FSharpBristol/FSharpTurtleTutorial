@@ -22,7 +22,7 @@ Then run `dotnet restore` in the "Unit-Tests" folder.
 
 Now open the project at the root folder in Visual Studio Code.  If you installed Ionide from the Setup section you will have syntax highlighting of the ".fs" files, you will also be able to execute lines of the file using F# Interactive directly from VS Code (Select the lines and press Alt+Enter)
 
-[The exercise tutorial can be found here](https://github.com/FSharpBristol/FSharpBristolPresentations/blob/master/slides/FSharpTurtleTutorial.md)
+[The exercise tutorial can be found here](https://fsharpbristol.github.io/FSharpBristol/presentations/FSharpTurtleTutorial#/1), press the down arrow to work through the slides.
 
 ## Specifications
 
