@@ -18,8 +18,6 @@ You'll also need Visual Studio Code, Ionide and the Visual F# Tools.
 
 Firstly run `dotnet restore` and `dotnet build` in the "Exercise" folder
 
-Then run `dotnet restore` in the "Unit-Tests" folder.
-
-Now open the root folder in Visual Studio Code (e.g: `C:\Git\FSharpTurtleTutorial`).  If you installed Ionide from the Setup section you will have syntax highlighting of the ".fs" files, you will also be able to execute lines of the file using F# Interactive directly from VS Code (Select the lines and press Alt+Enter)
+Then open the root folder in Visual Studio Code (e.g: `C:\Git\FSharpTurtleTutorial`).  If you installed Ionide from the Setup section you will have syntax highlighting of the ".fs" files, you will also be able to execute lines of the file using F# Interactive directly from VS Code (Select the lines and press Alt+Enter)
 
 [The exercise tutorial can be found here](https://fsharpbristol.github.io/FSharpBristol/presentations/FSharpTurtleTutorial#/1), press the down arrow to work through the slides.
