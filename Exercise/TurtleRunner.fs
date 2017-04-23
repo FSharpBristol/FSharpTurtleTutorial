@@ -41,6 +41,8 @@ let commands = [
 let turtle = {xpos=0.0; ypos=0.0; angle=90.0; penState=Down; colour=Black}
 
 // Apply all the commands to the Turtle in turn
-let movedTurtle = commands |> List.fold processCommand turtle
+let movedTurtle = 
+    commands 
+    |> List.fold (fun agg command -> processCommand agg command) turtle
 
 *)
