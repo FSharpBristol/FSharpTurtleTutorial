@@ -2,7 +2,7 @@
 
 101 Workshop for F#, building a Logo Turtle.  Influenced by this blog post: http://fsharpforfunandprofit.com/posts/13-ways-of-looking-at-a-turtle/
 
-Based on "Logo", the original 1967 turtle program.  Here's an online version for reference: https://turtleacademy.com/playground/en
+Based on "Logo", the original 1967 turtle program.  Here's an online version for reference: http://turtleacademy.com/playground/en
 
 ## Setup
 
