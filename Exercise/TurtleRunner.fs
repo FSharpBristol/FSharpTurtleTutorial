@@ -3,26 +3,38 @@ module TurtleRunner
 open System
 
 // Basic discriminted unions - think enums
-type PenState = FillInThePenStates
-type Colour = FillInTheColours
-type TurnDirection = FillInTheTurnDirections
+type PenState = Up | Down
+type Colour = Black | Red | Blue | Green
+type TurnDirection = Left | Right
 
 // Record type - translates to a sealed class with readonly, immutable properties
 type Turtle = {
-    turtleProperty:string
+    xpos:float
+    ypos:float
+    angle:float
+    penState:PenState
+    colour:Colour
 }
 
 // Discriminated unions with values - think enums on steroids
-type Command = FillInTheAvailableCommands
+type Command = 
+    | Move of float
+    | Turn of TurnDirection * float 
+    | SetPen of PenState 
+    | SetColour of Colour
 
 // Function to apply state changes in a Command to a Turtle
-// Uses pattern matching to deconstruct the command into the different cases
 let processCommand turtle command = 
     match command with
-    | _ -> failwith "Command pattern matching not applied"
-
-// --- Uncomment this section to run a full test ---
-(*
+    | Move distance -> let angleInRads = turtle.angle * (Math.PI/180.0)
+                       {turtle with 
+                            xpos = turtle.xpos + (distance * Math.Sin(angleInRads))
+                            ypos = turtle.ypos + (distance * Math.Cos(angleInRads))}
+    | Turn(direction, degrees) -> match direction with 
+                                  | Left ->  {turtle with angle = turtle.angle - degrees} 
+                                  | Right -> {turtle with angle = turtle.angle + degrees} 
+    | SetPen state ->  {turtle with penState=state}
+    | SetColour colour -> {turtle with colour=colour}
 
 // List of Commands to apply
 let commands = [
@@ -44,5 +56,3 @@ let turtle = {xpos=0.0; ypos=0.0; angle=90.0; penState=Down; colour=Black}
 let movedTurtle = 
     commands 
     |> List.fold (fun agg command -> processCommand agg command) turtle
-
-*)
