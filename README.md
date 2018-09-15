@@ -6,17 +6,17 @@ Based on "Logo", the original 1967 turtle program.  Here's an online version for
 
 ## Setup
 
-Needs the .Net Core 1.0.4 runtime installed locally.
+Needs the .NET Core 2.1 SDK installed locally.
 
-If you don't already have this installed run the .NET Core SDK Installer (contains .NET Core 1.0.4 and 1.1.1) from here: https://www.microsoft.com/net/download/core
+If you don't already have this installed click "Download .NET Core SDK" here: https://www.microsoft.com/net/download/core
 
-You'll also need Visual Studio Code, Ionide and the Visual F# Tools.  
+You'll also need Visual Studio Code, Ionide and the Visual F# Tools.
 
-[Go here](http://fsharp.org/use/windows/) and follow "Options 2: Install Visual Studio Code" then "Option 3: Install the free F# compiler and tools alone"
+[Go here](http://fsharp.org/use/windows/) and follow "Options 2: Install Visual Studio Code", then "Option 4: Install the Visual Studio 2017 Build Tools".
 
 ## Starting the Workshop
 
-Firstly run `dotnet restore` and `dotnet build` in the "Exercise" folder
+Firstly run `dotnet restore` and `dotnet build` in the root folder
 
 Then open the root folder in Visual Studio Code (e.g: `C:\Git\FSharpTurtleTutorial`).  If you installed Ionide from the Setup section you will have syntax highlighting of the ".fs" files, you will also be able to execute lines of the file using F# Interactive directly from VS Code (Select the lines and press Alt+Enter)
 
