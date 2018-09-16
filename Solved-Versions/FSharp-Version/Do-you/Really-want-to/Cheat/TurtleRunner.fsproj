@@ -1,15 +1,10 @@
-<Project Sdk="FSharp.NET.Sdk;Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.1</TargetFramework>
-    <DebugType>portable</DebugType>
-    <AssemblyName>TurtleRunner</AssemblyName>
-    <OutputType>Library</OutputType>
-    <PackageId>TurtleRunner</PackageId>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="FSharp.NET.Sdk" Version="1.0.5" PrivateAssets="All" />
     <PackageReference Include="FSharp.Core" Version="4.5.2" />
   </ItemGroup>
 

@@ -2,10 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.1</TargetFramework>
-    <DebugType>portable</DebugType>
-    <AssemblyName>CSharp-Version</AssemblyName>
     <OutputType>Exe</OutputType>
-    <PackageId>CSharp-Version</PackageId>
   </PropertyGroup>
 
 </Project>
