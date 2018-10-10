@@ -3,39 +3,26 @@ module TurtleRunner
 open System
 
 // Basic discriminted unions - think enums
-type PenState = Up | Down
-type Colour = Black | Red | Blue | Green
-type TurnDirection = Left | Right
+type PenState = FillInThePenStates
+type Colour = FillInTheColours
+type TurnDirection = FillInTheTurnDirections
 
 // Record type - translates to a sealed class with readonly, immutable properties
 type Turtle = {
-    xpos:float
-    ypos:float
-    angle:float
-    penState:PenState
-    colour:Colour
+    turtleProperty:string
 }
 
 // Discriminated unions with values - think enums on steroids
-type Command = 
-    | Move of float
-    | Turn of TurnDirection * float 
-    | SetPen of PenState 
-    | SetColour of Colour
+type Command = FillInTheAvailableCommands
 
 // Function to apply state changes in a Command to a Turtle
+// Uses pattern matching to deconstruct the command into the different cases
 let processCommand turtle command = 
     match command with
-    | Move distance -> let angleInRads = turtle.angle * (Math.PI/180.0)
-                       {turtle with 
-                            xpos = turtle.xpos + (distance * Math.Sin(angleInRads))
-                            ypos = turtle.ypos + (distance * Math.Cos(angleInRads))}
-    | Turn(direction, degrees) -> match direction with 
-                                  | Left ->  {turtle with angle = turtle.angle - degrees} 
-                                  | Right -> {turtle with angle = turtle.angle + degrees} 
-    | SetPen state ->  {turtle with penState=state}
-    | SetColour colour -> {turtle with colour=colour}
+    | _ -> failwith "Command pattern matching not applied"
 
+// --- Uncomment this section to run a full test ---
+(*
 // List of Commands to apply
 let commands = [
     Move 20.0
@@ -48,11 +35,10 @@ let commands = [
     SetPen Up 
     Move 40.0
 ]
-
 // Our initial Turtle instance
 let turtle = {xpos=0.0; ypos=0.0; angle=90.0; penState=Down; colour=Black}
-
 // Apply all the commands to the Turtle in turn
 let movedTurtle = 
     commands 
     |> List.fold (fun agg command -> processCommand agg command) turtle
+*)
