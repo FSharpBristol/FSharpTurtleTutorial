@@ -26,10 +26,10 @@ type Command =
 // Function to apply state changes in a Command to a Turtle
 let processCommand turtle command = 
     match command with
-    | Move distance -> let angleInRads = turtle.angle * (Math.PI/180.0)
-                       {turtle with 
-                            xpos = turtle.xpos + (distance * Math.Sin(angleInRads))
-                            ypos = turtle.ypos + (distance * Math.Cos(angleInRads))}
+    | Move distance ->  let angleInRads = turtle.angle * (Math.PI/180.0)
+                        {turtle with 
+                            xpos = turtle.xpos + distance * sin angleInRads
+                            ypos = turtle.ypos + distance * cos angleInRads}
     | Turn(direction, degrees) -> match direction with 
                                   | Left ->  {turtle with angle = turtle.angle - degrees} 
                                   | Right -> {turtle with angle = turtle.angle + degrees} 
