@@ -253,3 +253,4 @@ paket-files/
 
 # VS Code 
 .vscode/
+.ionide/
