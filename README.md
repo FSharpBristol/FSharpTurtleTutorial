@@ -6,13 +6,13 @@ Based on "Logo", the original 1967 turtle program.  Here's an online version for
 
 ## Setup
 
-Needs the .NET Core 2.1 SDK installed locally.
+Needs the .NET Core 3.0 SDK installed locally.
 
 If you don't already have this installed click "Download .NET Core SDK" here: https://www.microsoft.com/net/download/core
 
 You'll also need Visual Studio Code, Ionide and the Visual F# Tools.
 
-[Go here](http://fsharp.org/use/windows/) and follow "Options 2: Install Visual Studio Code", then "Option 4: Install the Visual Studio 2017 Build Tools".
+[Go here](http://fsharp.org/use/windows/) and follow "Options 2: Install Visual Studio Code".
 
 ## Starting the Workshop
 
